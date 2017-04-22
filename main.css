@@ -1,0 +1,59 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 800;
+
+}
+
+body {
+ display: flex;
+ flex-direction: column;
+        background: black;
+}
+
+p {
+/*     position: absolute; */
+    color: white;
+    right: 10px;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+p:nth-of-type(2) {
+    text-align: right;
+}
+p:nth-of-type(3) {
+    text-align: center;
+
+    padding: 0;
+    overflow: hidden;
+}
+p:nth-of-type(3)::before {
+    transform: scaleX(-1) translateX(4rem);
+
+}
+p:nth-of-type(3)::after, p:nth-of-type(3)::before {
+    position: absolute;
+    font-size: 4rem;
+    content: '🎉';
+    line-height: 3rem;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.row video {
+    width: 33.3333vw;
+}
+
+
+
+video {
+    max-width: 100vw;
+}
